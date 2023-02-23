@@ -1,0 +1,373 @@
+.home {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  min-height: 100vh;
+}
+
+.home .matches {
+  padding: 0 !important;
+}
+
+.home .matches button {
+  margin: 0;
+}
+
+.match_list {
+  padding: 10px 15px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  background-color: var(--dark);
+  color: var(--blue);
+  border-color: transparent;
+}
+
+.match_list .vs {
+  color: var(--light);
+  opacity: 0.7;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--gray-dark);
+  padding: 10px;
+}
+
+.match_list .match_time {
+  border-radius: 0 3px 3px 0;
+  background-color: var(--yellow);
+  color: var(--dark);
+  padding: 10px;
+}
+
+.match_list .score_line {
+  border-radius: 3px 0 0 3px;
+  background-color: var(--dark);
+  padding: 5px 10px;
+  gap: 10px;
+}
+
+.match_list .score_line .v-line {
+  background-color: var(--gray);
+}
+
+.match_list .ht_score_line {
+  color: var(--light);
+  opacity: 0.5;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.match_list .ft_score_line {
+  color: var(--light);
+  font-size: 1.5em;
+  padding: 0 10px;
+  font-weight: normal;
+}
+
+.match_list span {
+  font-size: 0.7em;
+  color: var(--pink);
+}
+
+.match_list:hover {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.match_list .time_info {
+  gap: 5px;
+}
+
+.match_list .time_info, .match_list .match_outcome {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 3px;
+  background-color: var(--gray-dark);
+  padding: 10px;
+  min-width: 80px;
+}
+
+.sidebar {
+  margin: 10px;
+}
+
+.sidebar .widgets_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 15px;
+}
+
+.sidebar .widgets_container .widget {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar .match_list {
+  margin-top: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.teams_info {
+  gap: 10px;
+}
+
+.match_time {
+  grid-area: score;
+}
+
+.team1 {
+  grid-area: name1;
+}
+
+.team2 {
+  grid-area: name2;
+}
+
+.widget.match .match_list {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.league {
+  color: var(--light-teal);
+}
+
+.league span {
+  color: var(--blue);
+}
+
+.team {
+  text-align: center;
+  max-width: 100px;
+}
+
+.team .team_img {
+  aspect-ratio: 1;
+  margin-bottom: 15px;
+  min-width: 50px;
+}
+
+.team .team_name {
+  font-size: 0.8em;
+  word-break: break-all;
+  color: var(--light);
+}
+
+.chances {
+  overflow: hidden;
+  text-align: center;
+}
+
+.chances p {
+  color: var(--blue);
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+.chances .prob_line {
+  height: 7px;
+}
+
+.chances .first {
+  background-color: var(--teal);
+}
+
+.chances .draw {
+  background-color: var(--gray);
+}
+
+.chances .second {
+  background-color: var(--red);
+}
+
+.widget {
+  background-color: var(--gray-dark);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  background-color: #0000002c;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 50px;
+}
+
+.navigate-btn {
+  max-width: 10%;
+  font-size: 2em;
+  color: var(--light);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin: 0;
+  opacity: 0.1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.navigate-btn:hover {
+  opacity: 1;
+}
+
+.right {
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(0, 0, 0, 0.3)));
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.3));
+}
+
+.left {
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(transparent));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.matches {
+  min-height: 50vh;
+}
+
+.title {
+  color: var(--light);
+  font-size: 0.9em;
+  font-weight: 400;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  margin-bottom: 0;
+  font-family: 'Abel', sans-serif;
+}
+
+.content-title {
+  color: var(--light);
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+  font-family: 'Abel', sans-serif;
+}
+
+.live_matches {
+  padding: 15px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: var(--yellow);
+}
+
+.live_matches .live_match {
+  border-radius: 4px;
+  font-size: 0.8em;
+  overflow: hidden;
+}
+
+.live_matches .match_det {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 1fr 40%;
+      grid-template-columns: 40% 1fr 40%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  grid-gap: 5px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.live_matches .match_det .progress {
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: var(--yellow);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.live_matches .team_name {
+  color: var(--yellow);
+  font-size: 0.9em;
+}
+
+.live_matches .time {
+  color: var(--dark);
+  background-color: var(--yellow);
+  text-align: center;
+  max-width: 40px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.live_matches .score_line {
+  font-size: 1.2em;
+  color: var(--light);
+}
+
+.league_titles {
+  margin-bottom: -1px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.league_list {
+  float: right;
+  border-color: var(--gray-dark);
+  border-width: 2px;
+}
+
+.league_list .no_padding {
+  padding: 0 !important;
+}
+
+.league_list .league_title {
+  top: 0;
+  right: 100%;
+  background-color: var(--dark);
+  padding: 15px;
+  z-index: 10;
+  border-left: 2px solid var(--gray-dark);
+  color: var(--gray);
+  text-align: center;
+  word-break: break-all;
+}
+
+.league_list .league_title.no-right-border {
+  border-left: none;
+}
+
+.league_list .league_title:hover, .league_list .league_title.active {
+  border-bottom-color: transparent;
+  background-color: var(--gray-dark);
+  color: var(--light);
+}
+
+.league_matches {
+  background-color: var(--gray-dark);
+  padding: 2%;
+  gap: 15px;
+  border-radius: 0 5px 5px 5px;
+  color: var(--pink);
+}
+
+.league_matches .match_list {
+  margin: 0;
+  padding: 10px;
+  min-width: 40%;
+  gap: 15px;
+}
+
+.top_leagues {
+  padding: 3%;
+}
+
+.front {
+  z-index: 1;
+}
+/*# sourceMappingURL=home.css.map */

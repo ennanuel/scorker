@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="5.20833in" height="5.20833in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5208 5208"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#F7ADAF;stroke-width:20.8307}
+    .fil1 {fill:none}
+    .fil0 {fill:#F7ADAF}
+   ]]>
+  </style>
+   <mask id="id0">
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="1580.49" y1="3099.4" x2="4984.79" y2="2963.1">
+   <stop offset="0" style="stop-opacity:0.188235; stop-color:white"/>
+   <stop offset="0.521569" style="stop-opacity:0; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+    <rect style="fill:url(#id1)" x="1352" y="1609" width="3862" height="2844"/>
+   </mask>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <ellipse class="fil0 str0" transform="matrix(0.256117 -0.0186587 0.0217008 0.297874 1371.1 3568.89)" rx="193" ry="432"/>
+  <path class="fil1 str0" d="M1338 3459l0 0 0 0c-13,23 -20,66 -16,113 3,48 16,89 33,110 8,11 16,16 25,16l-49 3c-27,2 -53,-54 -59,-125 -5,-71 13,-130 40,-132l50 -4c-9,1 -17,8 -24,19z"/>
+  <path class="fil1 str0" d="M1228 3649c-15,1 -29,-29 -32,-67 -2,-39 7,-71 22,-72l-3 -1 78 -52c-16,22 -24,67 -21,119 4,51 19,94 37,114l-81 -41z"/>
+  <path class="fil1 str0" d="M1190 3493c8,0 16,7 23,19 -12,7 -19,36 -17,70 3,33 14,61 27,66 -5,13 -12,21 -20,22 -19,1 -37,-37 -41,-86 -3,-49 9,-89 28,-91z"/>
+  <line class="fil1 str0" x1="1218" y1="3510" x2="1190" y2= "3493" />
+  <line class="fil1 str0" x1="1203" y1="3670" x2="1228" y2= "3649" />
+  <path class="fil1 str0" d="M861 3695l342 -25c-14,1 -28,-20 -35,-51 -3,-11 -5,-22 -6,-35 0,-11 0,-22 0,-33 3,-33 14,-57 28,-58l-342 25c-18,1 -31,42 -27,91 4,49 22,87 40,86z"/>
+  <path class="fil0" style="mask:url(#id0)" d="M5208 4448l-73 -2833 -3773 1825c-25,12 53,54 58,125 6,71 -12,131 -40,133l111 17 3717 733z"/>
+ </g>
+</svg>

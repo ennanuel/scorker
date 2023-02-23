@@ -1,0 +1,304 @@
+.match_page .container {
+  padding: 10px;
+}
+
+.match_page .teams {
+  gap: 15px;
+}
+
+.match_page .info-title {
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.match_page .container {
+  margin-bottom: 15px;
+}
+
+.match_page .team {
+  max-width: 300px;
+  padding: 2%;
+}
+
+.match_page .info-title {
+  font-family: 'Abel', 'sans-serif';
+  color: var(--light);
+}
+
+.match_page .match_info {
+  padding: 15px;
+  margin-top: 15px;
+  background-color: var(--gray-dark);
+  border-radius: 10px;
+  gap: 10px;
+  font-size: 0.8em;
+}
+
+.match_page .match_info tbody {
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 200px;
+}
+
+.match_page .match_info tbody th {
+  background-color: var(--softish-pink);
+  padding: 10px;
+  text-align: left;
+}
+
+.match_page .match_info tbody tr {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 10px;
+  text-align: center;
+}
+
+.match_page .teams_form {
+  gap: 15px;
+}
+
+.match_page .teams_form .team_form {
+  gap: 10px;
+}
+
+.match_page .teams_form .form_graph {
+  gap: 10px;
+  height: 250px;
+}
+
+.match_page .teams_form .form_graph .form_graph_info {
+  gap: 10px;
+}
+
+.match_page .teams_form .form_graph .form_graph_info.win {
+  --parent: var(--teal);
+}
+
+.match_page .teams_form .form_graph .form_graph_info.draw {
+  --parent: var(--gray);
+}
+
+.match_page .teams_form .form_graph .form_graph_info.lose {
+  --parent: var(--red);
+}
+
+.match_page .teams_form .form_graph .opp {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  max-width: 40px;
+}
+
+.match_page .teams_form .form_graph .graph_line {
+  background-color: var(--parent);
+  max-width: 200px;
+}
+
+.match_page .teams_form .form_graph .outcome {
+  color: var(--light);
+}
+
+.match_page .prev_matches {
+  gap: 10px;
+  font-size: 0.9em;
+}
+
+.match_page .prev_matches .prev_match {
+  border-color: var(--parent);
+  border-radius: 3px;
+}
+
+.match_page .prev_matches .prev_match.win {
+  --parent: var(--teal);
+}
+
+.match_page .prev_matches .prev_match.lose {
+  --parent: var(--red);
+}
+
+.match_page .prev_matches .prev_match.draw {
+  --parent: var(--gray);
+}
+
+.match_page .prev_matches .prev_match .match_details {
+  padding: 5px 10px;
+  gap: 5px;
+}
+
+.match_page .prev_matches .prev_match .match_details .score_line {
+  font-weight: bold;
+  color: var(--yellow);
+}
+
+.match_page .prev_matches .prev_match .match_details .team_name {
+  font-weight: 0.9em;
+  color: var(--parent);
+}
+
+.match_page .prev_matches .prev_match .outcome {
+  background-color: var(--parent);
+  color: var(--light);
+  max-width: 32px;
+  padding: 5px;
+}
+
+.match_page .filters {
+  margin: 50px auto 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-color: var(--gray-dark);
+  border-width: 2px;
+}
+
+.match_page .filters button {
+  padding: 10px;
+  color: var(--light);
+  background-color: var(--gray-dark);
+  border: none;
+  outline: none;
+}
+
+.match_page .filters button.active {
+  background-color: transparent;
+}
+
+.match_page .filters button:hover {
+  background-color: var(--dark);
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.match_page .h2h_matches {
+  gap: 10px;
+}
+
+.match_page .h2h_matches .h2h_match {
+  color: var(--gray-dark);
+  min-width: 200px;
+  border-radius: 5px;
+}
+
+.match_page .h2h_matches .h2h_match .h2h_teams {
+  gap: 5px;
+  padding: 10px;
+}
+
+.match_page .h2h_matches .h2h_match .h2h_teams .team_name {
+  font-size: 0.8em;
+}
+
+.match_page .h2h_matches .h2h_match .h2h_teams .dark {
+  color: var(--gray);
+}
+
+.match_page .h2h_matches .h2h_match .h2h_teams .light {
+  color: var(--teal);
+}
+
+.match_page .h2h_matches .h2h_match .h2h_teams .score {
+  gap: 5px;
+}
+
+.match_page .h2h_matches .h2h_match .outcome {
+  background-color: var(--gray-dark);
+  max-width: 50px;
+  border: none;
+  outline: none;
+  color: var(--light);
+  font-size: 1em;
+}
+
+.match_page .matches {
+  min-height: 0;
+}
+
+.match_page .h2h_info {
+  background-color: var(--gray-dark);
+  border-radius: 10px;
+  gap: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+}
+
+.match_page .h2h_info tbody {
+  gap: 10px;
+}
+
+.match_page .h2h_info th {
+  background-color: var(--softish-pink);
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  color: var(--light);
+}
+
+.match_page .h2h_info td {
+  background-color: var(--dark);
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  color: var(--light);
+}
+
+.match_page .h2h_info tr {
+  min-width: 200px;
+}
+
+.match_page .h2h_info .home_team th {
+  background-color: var(--soft-blue);
+}
+
+.match_page .h2h_info .away_team th {
+  background-color: var(--orange);
+}
+
+.match_page .graph {
+  gap: 20px;
+  font-size: 0.8em;
+}
+
+.match_page .charts {
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.match_page .graph_det {
+  gap: 10px;
+}
+
+.match_page .graph_det .lines {
+  gap: 5px;
+}
+
+.match_page .graph_det .graph_name {
+  color: var(--light);
+  font-weight: bold;
+}
+
+.match_page .graph_dat {
+  height: 200px;
+  max-width: 40px;
+  gap: 10px;
+}
+
+.match_page .graph_dat.w1, .match_page .graph_dat.over {
+  --parent: var(--teal);
+}
+
+.match_page .graph_dat.dX {
+  --parent: var(--gray);
+}
+
+.match_page .graph_dat.w2, .match_page .graph_dat.under {
+  --parent: var(--orange);
+}
+
+.match_page .graph_dat p {
+  color: var(--parent);
+}
+
+.match_page .graph_dat .graph_line {
+  background-color: var(--parent);
+}
+/*# sourceMappingURL=match.css.map */

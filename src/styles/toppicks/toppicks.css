@@ -1,0 +1,76 @@
+.top_picks .picks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(40%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-gap: 4vmin;
+}
+
+.top_picks .picks .pick {
+  background-color: var(--dark);
+  border-radius: 5px;
+  border: 1px solid var(--gray-dark);
+}
+
+.top_picks .picks .pick .v-line {
+  max-height: 80%;
+  width: 3px;
+  background-color: var(--gray-dark);
+}
+
+.top_picks .picks .pick .team_img {
+  max-width: 150px !important;
+}
+
+.top_picks .picks .pick .info {
+  background-color: var(--gray-dark);
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  gap: 10px;
+  font-size: 0.8em;
+}
+
+.top_picks .picks .pick .info li {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: var(--dark);
+}
+
+.top_picks .picks .pick .info .date {
+  color: var(--blue);
+}
+
+.top_picks .picks .pick .info .time {
+  color: var(--yellow);
+}
+
+.top_picks .picks .pick .info .location {
+  color: var(--light-pink);
+}
+
+.archive_btn {
+  padding: 14px 20px;
+  margin: 0 auto 50px;
+  border-radius: 5px;
+  outline: none;
+  background: var(--soft-pink);
+  border-color: var(--pink);
+  color: var(--light-pink);
+  display: block;
+}
+
+.archive_btn:hover {
+  background-color: var(--softish-pink);
+  border-color: var(--light-pink);
+  color: var(--light);
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.h-line {
+  max-width: 60%;
+  height: 3px;
+  background-color: var(--pink);
+  border: none;
+}
+/*# sourceMappingURL=toppicks.css.map */

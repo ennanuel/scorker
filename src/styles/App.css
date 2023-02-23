@@ -1,0 +1,113 @@
+@media (min-width: 771px) {
+    .for_smaller {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .pick {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        font-size: 0.9em !important;
+    }
+}
+
+@media (max-width: 770px) {
+    .header .nav_links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        border-radius: 5px;
+        margin: 0 10px;
+        background-color: #ffffff1e;
+        backdrop-filter: blur(20px);
+        padding: 10px;
+    }
+
+    .content {
+        grid-template-columns: 100% !important;
+    }
+
+    .teams_info {
+        grid-template-areas: "name1 score name2"
+            "time time time" !important;
+    }
+
+    .picks {
+        grid-template-columns: 100% !important;
+        margin-top: 20px;
+    }
+    
+    .league_list p {
+        padding: 10px !important;
+        font-size: 0.8em;
+    }
+
+    .header_logo {
+        font-size: 0.9em;
+    }
+
+    .header .nav_links .nav_link {
+        width: 100% !important;
+    }
+
+    .header .nav {
+        padding: 10px !important;
+        border-radius: 5px !important;
+    }
+
+    .header .search input {
+        padding: 5px !important;
+        font-size: 0.8em;
+    }
+
+    .header .search button {
+        padding: 0 5px !important;
+        font-size: 0.9em !important;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .notification {
+        margin-top: 5px !important;
+    }
+
+    .for_larger {
+        display: none !important;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content .match_list {
+        min-width: 100% !important;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .sort button {
+        padding: 10px !important;
+    }
+
+    .league_title {
+        font-size: 0.9em;
+    }
+
+    .info-title {
+        font-size: 1em;
+    }
+
+    .content-title {
+        font-size: 0.8em;
+    }
+}

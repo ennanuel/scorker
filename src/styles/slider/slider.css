@@ -1,0 +1,126 @@
+.slider .slider_match_list {
+  min-width: 100%;
+}
+
+.slider .slider_match {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 1fr 40%;
+      grid-template-columns: 40% 1fr 40%;
+  justify-items: center;
+}
+
+.slider .slider_match .team_info {
+  border-radius: 5px;
+  gap: 10px;
+  text-align: center;
+}
+
+.slider .slider_match .team_info h4 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  color: var(--light);
+}
+
+.slider .slider_img {
+  top: -50px;
+  left: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0.3;
+  height: 200%;
+  z-index: 0;
+}
+
+.slider .circles {
+  bottom: 0;
+  left: 50%;
+  margin: 15px;
+  gap: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.slider .circles .circle {
+  width: 7px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--light);
+}
+
+.slider .circles .circle:hover, .slider .circles .circle.active_circle {
+  background-color: var(--teal);
+  -webkit-box-shadow: 0 0 10px var(--teal);
+          box-shadow: 0 0 10px var(--teal);
+}
+
+.slider button {
+  z-index: 2;
+}
+
+.slider .slider_match_img {
+  max-width: 150px;
+}
+
+.slider .move-right {
+  -webkit-animation-name: move-right;
+          animation-name: move-right;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.slider .move-left {
+  -webkit-animation-name: move-left;
+          animation-name: move-left;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes move-right {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes move-right {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes move-left {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes move-left {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=slider.css.map */

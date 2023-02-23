@@ -1,0 +1,307 @@
+.match_page {
+
+    .container {
+        padding: 10px;
+    }
+
+    .teams {
+        gap: 15px
+    }
+
+    .info-title {
+        border-radius: 10px;
+        margin: 20px auto;
+    }
+
+    .container {
+        margin-bottom: 15px;
+    }
+    
+    .team {
+        max-width: 300px;
+        padding: 2%;
+    }
+
+    .info-title {
+        font-family: 'Abel', 'sans-serif';
+        color: var(--light)
+    }
+
+    .match_info {
+        padding: 15px;
+        margin-top: 15px;
+        background-color: var(--gray-dark);
+        border-radius: 10px;
+        gap: 10px;
+        font-size: 0.8em;
+
+        tbody {
+            border-radius: 5px;
+            overflow: hidden;
+            min-width: 200px;
+
+            th {
+                background-color: var(--softish-pink);
+                padding: 10px;
+                text-align: left;
+            }
+
+            tr {
+                background-color: var(--dark);
+                color: var(--light);
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
+
+    .teams_form {
+        gap: 15px;
+
+        .team_form {
+            gap: 10px;
+        }
+
+        .form_graph {
+            gap: 10px;
+            height: 250px;
+
+            .form_graph_info {
+                gap: 10px;
+        
+                &.win {
+                    --parent: var(--teal);
+                }
+        
+                &.draw {
+                    --parent: var(--gray);
+                }
+        
+                &.lose {
+                    --parent: var(--red);
+                }
+            }
+
+            .opp {
+                aspect-ratio: 1;
+                border-radius: 50%;
+                max-width: 40px;
+            }
+
+            .graph_line {
+                background-color: var(--parent);
+                max-width: 200px;
+            }
+
+            .outcome {
+                color: var(--light);
+            }
+        }
+    }
+
+    .prev_matches {
+        gap: 10px;
+        font-size: 0.9em;
+
+        .prev_match{
+            &.win {
+                --parent: var(--teal);
+            }
+            &.lose {
+                --parent: var(--red);
+            }
+            &.draw {
+                --parent: var(--gray);
+            }
+
+            border-color: var(--parent);
+            border-radius: 3px;
+
+            .match_details {
+                padding: 5px 10px;
+                gap: 5px;
+
+                .score_line {
+                    font-weight: bold;
+                    color: var(--yellow);
+                }
+
+                .team_name {
+                    font-weight: 0.9em;
+                    color: var(--parent)
+                }
+            }
+
+            .outcome {
+                background-color: var(--parent);
+                color: var(--light);
+                max-width: 32px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .filters {
+        margin: 50px auto 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        width: max-content;
+        border-color: var(--gray-dark);
+        border-width: 2px;
+
+        button {
+            padding: 10px;
+            color: var(--light);
+            background-color: var(--gray-dark);
+            border: none;
+            outline: none;
+
+            &.active {
+                background-color: transparent;
+            }
+
+            &:hover {
+                background-color: var(--dark);
+                transition: background-color 0.3s ease;
+            }
+        }
+    }
+
+    .h2h_matches {
+        gap: 10px;
+
+        .h2h_match {
+            color: var(--gray-dark);
+            min-width: 200px;
+            border-radius: 5px;
+
+            .h2h_teams {
+                gap: 5px;
+                padding: 10px;
+
+                .team_name {
+                    font-size: 0.8em;
+                }
+
+                .dark {
+                    color: var(--gray);
+                }
+
+                .light {
+                    color: var(--teal);
+                }
+
+                .score {
+                    gap: 5px;
+                }
+            }
+
+            .outcome {
+                background-color: var(--gray-dark);
+                max-width: 50px;
+                border: none;
+                outline: none;
+                color: var(--light);
+                font-size: 1em;
+            }
+        }
+    }
+
+    .matches {
+        min-height: 0;
+    }
+
+    .h2h_info {
+        background-color: var(--gray-dark);
+        border-radius: 10px;
+        gap: 15px;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 0.8em;
+
+        tbody {
+            gap: 10px
+        }
+        
+        th {
+            background-color: var(--softish-pink);
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+            color: var(--light)
+        }
+        
+        td {
+            background-color: var(--dark);
+            padding:10px;
+            border-radius: 0 5px 5px 0;
+            color: var(--light);
+        }
+
+        tr {
+            min-width: 200px;
+        }
+
+        .home_team {
+            
+            th {
+                background-color: var(--soft-blue)
+            }
+        }
+
+        .away_team {
+            
+            th {
+                background-color: var(--orange)
+            }
+        }
+    }
+
+    .graph {
+        gap: 20px;
+        font-size: 0.8em;
+    }
+
+    .charts {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .graph_det {
+        gap: 10px;
+
+        .lines {
+            gap: 5px;
+        }
+
+        .graph_name {
+            color: var(--light);
+            font-weight: bold;
+        }
+    }
+
+    .graph_dat {
+        height: 200px;
+        max-width: 40px;
+        gap: 10px;
+
+        &.w1, &.over {
+            --parent: var(--teal);
+        }
+
+        &.dX {
+            --parent: var(--gray);
+        }
+
+        &.w2, &.under {
+            --parent: var(--orange);
+        }
+
+        p {
+            color: var(--parent)
+        }
+
+        .graph_line {
+            background-color: var(--parent);
+        }
+    }
+}

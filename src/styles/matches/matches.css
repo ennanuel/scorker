@@ -1,0 +1,96 @@
+.page {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 10px;
+}
+
+.page .container {
+  padding: 2%;
+}
+
+.page .match_result h2 {
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  margin-bottom: -1px;
+  background-color: var(--gray-dark);
+  border-bottom: 1px solid var(--gray-dark);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: 'Abel', 'sans-serif';
+  color: var(--light-pink);
+}
+
+.page .match_result .list_item {
+  text-align: left;
+  border-radius: 0 5px 5px 5px;
+  background-color: var(--gray-dark);
+  padding: 2%;
+}
+
+.page .match_result .list_item .live_match {
+  border-color: var(--gray-dark);
+  background-color: var(--dark);
+  overflow: hidden;
+}
+
+.page .match_result .list_item .live_match:hover {
+  border-color: var(--pink);
+}
+
+.page .match_result .list_item .live_match:hover .time {
+  background-color: var(--pink);
+}
+
+.page .match_result .list_item .teams {
+  padding: 10px;
+  gap: 10px;
+}
+
+.page .match_result .list_item .team_name {
+  font-size: 1em;
+  color: var(--light);
+  opacity: 0.8;
+}
+
+.page .match_result .list_item .upcoming.time {
+  max-width: none;
+  background-color: var(--softish-pink);
+  color: var(--light);
+  opacity: 0.8;
+}
+
+.page .match_result .list_item .score {
+  padding: 10px;
+  gap: 10px;
+  font-size: 1.2em;
+  color: var(--white);
+}
+
+.page .sort {
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.page .sort button {
+  padding: 12px 15px;
+  border-radius: 5px;
+  border-color: var(--pink);
+  background-color: var(--soft-pink);
+  font-family: 'Abel', 'sans-serif';
+  font-weight: bold;
+  color: var(--light-pink);
+}
+
+.page .sort button:hover {
+  background-color: var(--softish-pink);
+}
+
+.v-line {
+  width: 2px;
+  max-height: 80%;
+  background-color: var(--softish-pink);
+  border: none;
+}
+/*# sourceMappingURL=matches.css.map */

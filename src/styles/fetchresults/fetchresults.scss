@@ -1,0 +1,157 @@
+.fetch_result {
+    max-width: 300px;
+    aspect-ratio: 1;
+    margin: auto;
+    color: var(--light-pink);
+
+    h3 {
+        color: var(--gray-dark);
+        text-align: center;
+    }
+}
+
+.no_match {
+    gap: 50px;
+}
+
+.empty {
+    
+    .ball {
+        top: 43%;
+        right: 12%;
+        max-width: 100px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(28, 20, 26, 0.9) 50%);
+            animation: move-around2 1.5s infinite;
+        }
+    }
+
+    .torch {
+        animation: move-around 1.5s infinite ease;
+        transform-origin: left;
+        position: relative;
+        z-index: 1;
+    }
+
+    @keyframes move-around {
+        0% {
+            transform: rotate(10deg);
+        }
+
+        50% {
+            transform: rotate(-5deg)
+        }
+
+        100% {
+            transform: rotate(10deg)
+        }
+    }
+
+    @keyframes move-around2 {
+        0% {
+            transform: rotate(30deg);
+        }
+
+        50% {
+            transform: rotate(-30deg)
+        }
+
+        100% {
+            transform: rotate(30deg)
+        }
+    }
+}
+
+.loader {
+    overflow: hidden;
+
+    h3 {
+        margin-top: 20px;
+    }
+
+    .ball {
+        animation: rotate-ball 3s infinite linear;
+        max-width: 150px;
+
+        img {
+            position: relative;
+            left: 2px;
+            top: -2px;
+        }
+    }
+
+    .line {
+        bottom: 42%;
+        width: 35%;
+        height: 1px;
+        background-color: var(--light-pink);
+        opacity: 0.7;
+
+        &.line1 {
+            left: 0;
+        }
+    
+        &.line2 {
+            right: 0;
+        }
+    }
+
+    .moving_stone {
+        background-color: var(--light-pink);
+        right: -15%;
+        opacity: 0.8;
+        animation: move 4s infinite linear;
+    }
+
+    .stone1 {
+        width: 8px;
+        height: 3px;
+    }
+
+    .stone2 {
+        width: 5px;
+        height: 3px;
+        animation-delay: 1s;
+    }
+
+    .stone3 {
+        width: 10px;
+        height: 3px;
+        animation-delay: 1.5s;
+    }
+
+    @keyframes move {
+        from {
+            transform: translateX(20px)
+        } 
+        to {
+            transform: translateX(-500px);
+        }
+    }
+
+    @keyframes rotate-ball {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(1turn)
+        }
+    }
+}
+    
+.btn {
+    outline: none;
+    border-radius: 3px;
+    background-color: var(--gray-dark);
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: var(--light);
+}

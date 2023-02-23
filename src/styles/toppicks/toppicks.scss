@@ -1,0 +1,75 @@
+.top_picks {
+
+    .picks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        grid-gap: 4vmin;
+
+        .pick {
+            background-color: var(--dark);
+            border-radius: 5px;
+            border: 1px solid var(--gray-dark);
+
+            .v-line {
+                max-height: 80%;
+                width: 3px;
+                background-color: var(--gray-dark);
+            }
+
+            .team_img {
+                max-width: 150px !important;
+            }
+
+            .info {
+                background-color: var(--gray-dark);
+                padding: 10px;
+                border-radius: 0 5px 5px 0;
+                gap: 10px;
+                font-size: 0.8em;
+
+                li {
+                    padding: 10px;
+                    border-radius: 3px;
+                    background-color: var(--dark);
+                }
+
+                .date {
+                    color: var(--blue);
+                }
+
+                .time {
+                    color: var(--yellow);
+                }
+
+                .location {
+                    color: var(--light-pink)
+                }
+            }
+        }
+    }
+}
+
+.archive_btn {
+    padding: 14px 20px;
+    margin: 0 auto 50px;
+    border-radius: 5px;
+    outline: none;
+    background: var(--soft-pink);
+    border-color: var(--pink);
+    color: var(--light-pink);
+    display: block;
+
+    &:hover {
+        background-color: var(--softish-pink);
+        border-color: var(--light-pink);
+        color: var(--light);
+        transition: background-color 0.3s ease;
+    }
+}
+
+.h-line {
+    max-width: 60%;
+    height: 3px;
+    background-color: var(--pink);
+    border: none;
+}
