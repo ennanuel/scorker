@@ -41,7 +41,7 @@
 }
 
 .match_page .match_info tbody th {
-  background-color: var(--softish-pink);
+  background-color: var(--softish-teal);
   padding: 10px;
   text-align: left;
 }
@@ -228,7 +228,7 @@
 }
 
 .match_page .h2h_info th {
-  background-color: var(--softish-pink);
+  background-color: var(--softish-teal);
   padding: 10px;
   border-radius: 5px 0 0 5px;
   color: var(--light);

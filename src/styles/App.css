@@ -61,8 +61,11 @@
         border-radius: 5px !important;
     }
 
+    .header .search .search_btn {
+        padding: 3px 5px !important;
+    }
+
     .header .search input {
-        padding: 5px !important;
         font-size: 0.8em;
     }
 
@@ -109,5 +112,26 @@
 
     .content-title {
         font-size: 0.8em;
+    }
+
+    .sidebar .match_list, .notification {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 600px) {
+    .sort {
+        gap: 5px !important;
+    }
+
+    .sort button {
+        padding: 5px !important;
+        font-size: 0.75em;
+    }
+
+    .filter.widget {
+        padding: 0;
+        gap: 5px !important;
+        margin-bottom: 20px !important;
     }
 }

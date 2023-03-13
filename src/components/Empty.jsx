@@ -3,12 +3,12 @@ import image2 from '../assets/images/soccer_ball2.svg'
 
 const Empty = ({ text }) => {
   return (
-    <div className="empty fetch_result relative flex-col ai-c jc-c">
-      <div className="ball absolute">
-        <img src={image2} className="full-w" alt="" />
+    <div className="empty fetch_result full-w relative flex-col ai-fe jc-c">
+      <div className="ball relative">
+        <img src={image2} className="full-w" alt="ball" />
       </div>
-        <img src={image} alt="" className="full-w torch" />
-        <h3>{text}</h3>
+        <img src={image} alt="flash light" className="full-w torch absolute" />
+        <h3 className="full-w">{text}</h3>
     </div>
   )
 }

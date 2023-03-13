@@ -2,7 +2,7 @@
   max-width: 300px;
   aspect-ratio: 1;
   margin: auto;
-  color: var(--light-pink);
+  color: var(--light-teal);
 }
 
 .fetch_result h3 {
@@ -11,13 +11,16 @@
 }
 
 .no_match {
-  gap: 50px;
+  gap: 10px;
+}
+
+.empty {
+  gap: 40px;
 }
 
 .empty .ball {
-  top: 43%;
-  right: 12%;
   max-width: 100px;
+  margin-right: 30px;
 }
 
 .empty .ball:before {
@@ -27,19 +30,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, rgba(28, 20, 26, 0.9)));
-  background: linear-gradient(90deg, transparent, rgba(28, 20, 26, 0.9) 50%);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, rgba(20, 22, 28, 0.9)));
+  background: linear-gradient(90deg, transparent, rgba(20, 22, 28, 0.9) 50%);
   -webkit-animation: move-around2 1.5s infinite;
           animation: move-around2 1.5s infinite;
+  border-radius: 50%;
 }
 
 .empty .torch {
-  -webkit-animation: move-around 1.5s infinite ease;
-          animation: move-around 1.5s infinite ease;
+  -webkit-animation: move-around 1.5s 0.7s infinite ease;
+          animation: move-around 1.5s 0.7s infinite ease;
   -webkit-transform-origin: left;
           transform-origin: left;
-  position: relative;
   z-index: 1;
+  bottom: 25%;
+  left: 0;
 }
 
 @-webkit-keyframes move-around {
@@ -126,7 +131,7 @@
   bottom: 42%;
   width: 35%;
   height: 1px;
-  background-color: var(--light-pink);
+  background-color: var(--light-teal);
   opacity: 0.7;
 }
 
@@ -139,11 +144,11 @@
 }
 
 .loader .moving_stone {
-  background-color: var(--light-pink);
+  background-color: var(--light-teal);
   right: -15%;
   opacity: 0.8;
-  -webkit-animation: move 4s infinite linear;
-          animation: move 4s infinite linear;
+  -webkit-animation: move 4s infinite linear forwards;
+          animation: move 4s infinite linear forwards;
 }
 
 .loader .stone1 {
@@ -207,15 +212,5 @@
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
   }
-}
-
-.btn {
-  outline: none;
-  border-radius: 3px;
-  background-color: var(--gray-dark);
-  border: none;
-  padding: 10px 15px;
-  font-weight: bold;
-  color: var(--light);
 }
 /*# sourceMappingURL=fetchresults.css.map */

@@ -6,7 +6,7 @@ import Loader from './Loader'
 
 const LiveMatches = () => {
     const [liveMatches, setLiveMatches] = useState([])
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const [empty, setEmpty] = useState(false)
     const [error, setError] = useState(false)
 
@@ -26,7 +26,7 @@ const LiveMatches = () => {
                 empty ?
                 <div className="no_match flex-col ai-c jc-c">
                     <Empty text="There are no Live matches now" /> 
-                    <button className="btn">Upcoming Matches</button>
+                    <button className="btn full-border">Upcoming Matches</button>
                 </div> :
                 liveMatches.length > 0 && liveMatches.map( (liveMatch, i) => <LiveMatch key={i} match={liveMatch} />)
             }

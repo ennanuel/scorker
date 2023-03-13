@@ -18,8 +18,19 @@
   font-size: 0.9em;
   border-radius: 4px;
   background-color: var(--dark);
-  color: var(--blue);
+  color: var(--cyan);
   border-color: transparent;
+  -webkit-box-shadow: 0 5px 10px var(--soft-dark);
+          box-shadow: 0 5px 10px var(--soft-dark);
+}
+
+.match_list h4 {
+  color: var(--light-teal);
+}
+
+.match_list .post {
+  color: var(--secondary);
+  text-align: center;
 }
 
 .match_list .vs {
@@ -64,8 +75,9 @@
 }
 
 .match_list span {
-  font-size: 0.7em;
-  color: var(--pink);
+  font-size: 0.8em;
+  color: var(--light-teal);
+  gap: 3px;
 }
 
 .match_list:hover {
@@ -94,8 +106,8 @@
 .sidebar .widgets_container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 15px;
@@ -190,10 +202,12 @@
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
+  -webkit-box-shadow: 0 0 10px var(--soft-dark);
+          box-shadow: 0 0 10px var(--soft-dark);
 }
 
 .container {
-  background-color: #0000002c;
+  background-color: var(--soft-dark);
   overflow: hidden;
   padding: 0;
   border-radius: 0 0 10px 10px;
@@ -353,7 +367,7 @@
   padding: 2%;
   gap: 15px;
   border-radius: 0 5px 5px 5px;
-  color: var(--pink);
+  color: var(--blue);
 }
 
 .league_matches .match_list {
@@ -365,6 +379,33 @@
 
 .top_leagues {
   padding: 3%;
+}
+
+.top_leagues .btn {
+  margin-top: 30px;
+}
+
+.btn {
+  outline: none;
+  border-radius: 3px;
+  background: var(--soft-teal);
+  border: none;
+  padding: 10px 15px;
+  color: var(--light);
+  border: 2px solid var(--cyan);
+  -webkit-transition: border-color 0.4s ease, -webkit-transform 0.4s ease;
+  transition: border-color 0.4s ease, -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease, border-color 0.4s ease;
+  transition: transform 0.4s ease, border-color 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.btn:hover {
+  border-color: inherit;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .front {

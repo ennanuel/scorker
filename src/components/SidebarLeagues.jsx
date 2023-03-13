@@ -4,13 +4,13 @@ import { getTopCompetitions } from '../assets/functions/api'
 
 const SidebarLeagues = () => {
     const [leagues, setLeagues] = useState([])
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [empty, setEmpty] = useState(false)
     const [error, setError] = useState(false)
 
     useEffect( () => {
-        getTopCompetitions(setLeagues, '', setLoading, setEmpty, setError)
-    })
+        getTopCompetitions(setLeagues, 5, setLoading, setEmpty, setError)
+    }, [])
 
 
     return (

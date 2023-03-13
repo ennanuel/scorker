@@ -48,6 +48,8 @@ const Match = ({ match }) => {
                             {`${hr > 12 ? hr - 12 : hr}:${mins < 10 ? '0' + mins : mins} ${hr >= 12 ? 'PM' : 'AM'}`}
                         </h3>
                     </div> :
+                    match?.status === 'POSTPONED' ?
+                    <h3 className="time_info post" style={style}>POSTPONED</h3> :
                     <div className="match_outcome flex-row ai-c jc-sb" style={style}>
                         <div className="score_line full-flex flex-row">
                             <div className="ft_score_line no_padding full-flex flex-row ai-c jc-c">

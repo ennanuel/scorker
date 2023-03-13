@@ -13,7 +13,7 @@ function App() {
     <div className="content">
       <Routes>
         <Route path="/*" element={<Home />} />
-        <Route path="/matches/:league?" element={<Matches />} />
+        <Route path="/matches/:competition?/:status?" element={<Matches />} />
         <Route path="/match/:id?" element={<Match />} />
         <Route path="/picks/:date?" element={<TopPicks />} />
       </Routes>

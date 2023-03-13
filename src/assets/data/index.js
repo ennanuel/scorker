@@ -7,7 +7,7 @@ export const navLinks = [
     },
     {
         name: 'Matches',
-        link: '/matches'
+        link: '/matches/all/all'
     },
     {
         name: 'Top Picks',

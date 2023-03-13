@@ -1,6 +1,6 @@
 const TopMatch = ({ match }) => {
   return (
-    <div className="slider_match full-w flex-row ai-c jc-se">
+    <div className="slider_match full-w">
       <div className="team_info full-w flex-col ai-c jc-sb">
         <img src={match?.homeTeam?.crest} className="slider_match_img full-w" alt="" />
         <h4>{match?.homeTeam?.name}</h4>

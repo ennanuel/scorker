@@ -14,6 +14,8 @@ import SliderMatch from "./SliderMatch";
 import Slider from "./Slider";
 import Loader from "./Loader"
 import Empty from "./Empty"
+import MatchesMatch from "./MatchesMatch"
+import Pick from "./Pick"
 
 export { 
     Header, 
@@ -32,4 +34,6 @@ export {
     Slider,
     Loader,  
     Empty,
+    MatchesMatch,
+    Pick,
 }

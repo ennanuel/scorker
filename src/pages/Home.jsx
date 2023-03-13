@@ -4,7 +4,7 @@ import { LiveMatches, TopMatches, Slider } from '../components'
 
 const Home = () => {
     const [topCompetitions, setTopCompetitions] = useState([]);
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const [empty, setEmpty] = useState(false)
     const [error, setError] = useState(false)
 

@@ -53,7 +53,7 @@ const Slider = ({ matches }) => {
     } , [matches, move])
 
     return (
-        <div className="container slider matches relative widget flex-row">
+        <div className="container slider matches relative widget flex-row" >
             <img src={ballImg} className="absolute slider_img" aria-hidden="true" alt="" />
             <button ref={rightBtnRef} onClick={moveRight} className='navigate-btn full-w full-h right absolute jc-c ai-c'>
                 <BsChevronRight />

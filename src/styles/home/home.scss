@@ -16,8 +16,18 @@
     font-size: 0.9em;
     border-radius: 4px;
     background-color: var(--dark);
-    color: var(--blue);
+    color: var(--cyan);
     border-color: transparent;
+    box-shadow: 0 5px 10px var(--soft-dark);
+
+    h4 {
+        color: var(--light-teal)
+    }
+
+    .post {
+        color: var(--secondary);
+        text-align: center;
+    }
 
     .vs {
         color: var(--light);
@@ -61,8 +71,9 @@
     }
 
     span {
-        font-size: 0.7em;
-        color: var(--pink)
+        font-size: 0.8em;
+        color: var(--light-teal);
+        gap: 3px;
     }
 
     &:hover {
@@ -89,7 +100,7 @@
 
     .widgets_container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         grid-template-rows: auto;
         grid-gap: 15px;
 
@@ -186,10 +197,11 @@
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
+    box-shadow: 0 0 10px var(--soft-dark);
 }
 
 .container {
-    background-color: #0000002c;
+    background-color: var(--soft-dark);
     overflow: hidden;
     padding: 0;
     border-radius: 0 0 10px 10px;
@@ -336,7 +348,7 @@
     padding: 2%;
     gap: 15px;
     border-radius: 0 5px 5px 5px;
-    color: var(--pink);
+    color: var(--blue);
 
     .match_list {
         margin: 0;
@@ -348,6 +360,29 @@
 
 .top_leagues {
     padding: 3%;
+
+    .btn {
+        margin-top: 30px;
+    }
+}
+    
+.btn {
+    outline: none;
+    border-radius: 3px;
+    background: var(--soft-teal);
+    border: none;
+    padding: 10px 15px;
+    color: var(--light);
+    border: 2px solid var(--cyan);
+    transition: transform 0.4s ease, border-color 0.4s ease;
+
+    &:hover {
+        border-color: inherit;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
 }
 
 .front {

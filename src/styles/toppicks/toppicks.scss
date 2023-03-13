@@ -8,7 +8,8 @@
         .pick {
             background-color: var(--dark);
             border-radius: 5px;
-            border: 1px solid var(--gray-dark);
+            border-color: var(--gray-dark);
+            border-width: 2px;
 
             .v-line {
                 max-height: 80%;
@@ -42,7 +43,7 @@
                 }
 
                 .location {
-                    color: var(--light-pink)
+                    color: var(--light-teal)
                 }
             }
         }
@@ -54,14 +55,14 @@
     margin: 0 auto 50px;
     border-radius: 5px;
     outline: none;
-    background: var(--soft-pink);
-    border-color: var(--pink);
-    color: var(--light-pink);
+    background: var(--soft-teal);
+    border-color: var(--blue);
+    color: var(--light-teal);
     display: block;
 
     &:hover {
-        background-color: var(--softish-pink);
-        border-color: var(--light-pink);
+        background-color: var(--softish-teal);
+        border-color: var(--light-teal);
         color: var(--light);
         transition: background-color 0.3s ease;
     }
@@ -70,6 +71,6 @@
 .h-line {
     max-width: 60%;
     height: 3px;
-    background-color: var(--pink);
+    background-color: var(--blue);
     border: none;
 }

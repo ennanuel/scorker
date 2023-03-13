@@ -40,11 +40,15 @@ const Header = () => {
         <h1 className="header_logo cursor-pointer">scopdate.</h1>
         <ul onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="nav_links relative for_larger flex-row ai-c">
           {
-            navLinks.map( (navLink, i) => (
-            <li key={i} className={`nav_link relative front flex-row jc-c ai-c cursor-pointer ${ location.pathname === navLink.link && 'active_link'}`}>
-              <Link to={navLink.link}>{navLink.name}</Link>
-            </li>
-            ) )
+            navLinks.map( (navLink, i) => {
+              const link = location.pathname
+              const linkName = link.match(/^\/[a-z]*/i)[0]
+
+              return (
+                <li key={i} className={`nav_link relative front flex-row jc-c ai-c cursor-pointer ${ linkName === navLink.link.match(/^\/[a-z]*/i)[0] && 'active_link'}`}>
+                  <Link to={navLink.link}>{navLink.name}</Link>
+                </li>
+            )})
           }
           <li className="moving_link absolute full-h" style={styles}></li>
         </ul>
@@ -55,11 +59,15 @@ const Header = () => {
       </nav>
         <ul className="nav_links for_smaller flex-row ai-c">
           {
-            navLinks.map( (navLink, i) => (
-            <li key={i} className={`nav_link flex-row jc-c ai-c cursor-pointer ${ location.pathname === navLink.link && 'active_link'}`}>
-              <Link to={navLink.link}>{navLink.name}</Link>
-            </li>
-            ) )
+            navLinks.map( (navLink, i) => {
+              const link = location.pathname
+              const linkName = link.match(/\/[a-z]/i)
+
+              return (
+                <li key={i} className={`nav_link flex-row jc-c ai-c cursor-pointer ${ linkName === navLink.link.match(/^\/[a-z]*/i)[0] && 'active_link'}`}>
+                  <Link to={navLink.link}>{navLink.name}</Link>
+                </li>
+            )})
           }
         </ul>
     </header>

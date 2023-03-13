@@ -6,7 +6,7 @@ const TopMatches = ({ matches, loader, empty }) => {
 
     return (
         <>
-        <div className="widget container top_leagues flex-COL ai-c jc-c">
+        <div className="widget container top_leagues flex-col ai-c jc-c">
             {
                 loader ?
                 <Loader text="Loading matches..." /> :
@@ -15,13 +15,13 @@ const TopMatches = ({ matches, loader, empty }) => {
                 <ul className="full-flex league_container full-w flex-col jc-c ai-fs">
                     <li className="league_list full-border league_titles cursor-pointer flex-row relative front">
                         {
-                            matches && matches.map( (league, i) => (
+                            matches.length > 0 && matches.map( (league, i) => (
                                 <p 
                                     onClick={() => { setShowCompetition(i) }} 
                                     key={i} 
                                     className={`league_title ${ showCompetition === i && 'active'} ${i === 0 && 'no-right-border'}`}
                                 >
-                                    {league.competition.name}
+                                    {window.innerWidth < 600 && league.competition.name.length > 8 ? league.competition.name.substring(0, 8) + '...' : league.competition.name}
                                 </p>
                             ))
                         }
@@ -46,6 +46,9 @@ const TopMatches = ({ matches, loader, empty }) => {
                     </li>
                 </ul>
             }
+            <button className="btn">
+                View More Matches
+            </button>
         </div>
         </>
     )
