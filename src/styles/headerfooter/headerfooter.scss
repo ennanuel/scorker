@@ -5,7 +5,7 @@
     z-index: 9999;
 
     .header_logo {
-        color: var(--teal);
+        color: var(--secondary);
     }
 
     .nav {
@@ -27,14 +27,17 @@
             font-weight: bold;
             font-size: 0.9em;
             color: var(--teal);
+            opacity: 0.7;
 
             &:hover {
                 color: var(--light);
+                opacity: 1;
             }
         }
 
         .active_link {
-            color: var(--light)
+            color: var(--light);
+            opacity: 1;
         }
 
         .moving_link {

@@ -15,7 +15,7 @@ const MatchesMatch = ({ matches }) => {
 
                         
                         return (
-                            <li key={j} className={`live_match flex-row full-border full-flex jc-sb ai-c ${/(in_play|paused)/i.test(elem.status) ? 'yellow' : /(finished|postponed)/i.test(elem.status) ? 'gray' : ''}`}>
+                            <li key={j} className={`live_match flex-row full-border full-flex jc-sb ai-c ${/(in_play|paused)/i.test(elem.status) ? 'yellow' : /(finished|postponed|cancelled)/i.test(elem.status) ? 'gray' : ''}`}>
                                 <div className="teams relative full-flex full-w full-h flex-col jc-sb ai-fs">
                                     <div className="progress absolute full-h"></div>
                                     <span className={`team_name home_team ${elem.score.fullTime.home > elem.score.fullTime.away || /(in_play|paused|timed)/i.test(elem.status)  ? 'won' : 'failed'}`}>{elem.homeTeam.name}</span>
@@ -41,7 +41,7 @@ const MatchesMatch = ({ matches }) => {
                                         {hrs >= 12 ? ' PM' : ' AM'}
                                         </> :
                                         <>
-                                        { /[a-z]+/i.test(elem.liveTime) ? elem.status === 'POSTPONED' ? 'POST' : elem.liveTime : elem.liveTime + "'" }
+                                        { /[a-z]+/i.test(elem.liveTime) ? /(cancelled|postponed)/i.test(elem.status) ? elem.status.substring(0, 4) : elem.liveTime : elem.liveTime + "'" }
                                         </>
                                     }
                                 </span>

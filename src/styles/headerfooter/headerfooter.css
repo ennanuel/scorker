@@ -7,7 +7,7 @@
 }
 
 .header .header_logo {
-  color: var(--teal);
+  color: var(--secondary);
 }
 
 .header .nav {
@@ -31,14 +31,17 @@
   font-weight: bold;
   font-size: 0.9em;
   color: var(--teal);
+  opacity: 0.7;
 }
 
 .header .nav_links .nav_link:hover {
   color: var(--light);
+  opacity: 1;
 }
 
 .header .nav_links .active_link {
   color: var(--light);
+  opacity: 1;
 }
 
 .header .nav_links .moving_link {

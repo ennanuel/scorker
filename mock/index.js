@@ -5,17 +5,26 @@ var requestOptions = {
     redirect: 'follow'
   };
 
-setInterval(() => {
+let interval;
+
+let fetchReq = () => {
+    clearInterval(interval)
     count.innerText = 'fetching...'
   
     fetch("http://localhost:4000/match?action=saveMatches", requestOptions)
     .then(response => response.text())
     .then(result => {
-        const data = JSON.parse(result)
-        count.innerText = data.result
+        if(result == "nothing left to do, THANK GOD!") {
+            count.innerText = 'Done!'
+        } else {
+            count.innerText = 'match(es) updated'
+            interval = setInterval( fetchReq, 60000 )
+        }
     })
     .catch(error => {
         count.innerText = JSON.stringify(error)
         console.log('error', error)
     });
-}, 60000)
+}
+
+interval = setInterval(fetchReq, 60000)
